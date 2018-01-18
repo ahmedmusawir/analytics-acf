@@ -1,0 +1,76 @@
+
+      
+FUNCTIONS.PHP
+
+/*=============================================
+=            ACF OPTIONS PAGE CODE            =
+=============================================*/
+
+if( function_exists('acf_add_options_page') ) {
+ 
+	$option_page = acf_add_options_page(array(
+		'icon_url' 	=> 'dashicons-chart-line',
+		'menu_title' 	=> 'Analytics',
+		'menu_slug' 	=> 'analytics-default-settings',
+		// 'capability' 	=> 'edit_posts',
+		// 'redirect' 	=> false
+	));
+ 
+}
+
+* ABOVE WP_HEAD()
+<!--===========================================
+=            CUSTOM ANALYTICS TAGS - HEAD     =
+============================================-->
+
+<?php if (get_field('before_ending_head_tag')) : ?>
+
+	<?php the_field('before_ending_head_tag'); ?>
+
+<?php else : ?>
+
+	<?php the_field('before_ending_head_tag_default', 'option'); ?>
+
+<?php endif; ?>	
+
+<!--====  End of CUSTOM ANALYTICS TAGS  ====-->
+
+
+* RIGHT UNDER <BODY>
+<!--======================================================
+=            CUSTOM ANALYTICS TAGS - BODY TOP            =
+=======================================================-->
+
+<?php if (get_field('after_top_body_tag')) : ?>
+
+	<?php the_field('after_top_body_tag'); ?>
+
+<?php else : ?>
+
+	<?php the_field('after_top_body_tag_default', 'option'); ?>
+
+<?php endif; ?>	
+
+<!--====  End of CUSTOM ANALYTICS TAGS - BODY TOP  ====-->
+
+
+* ABOVE END </BODY>
+<!--===========================================
+=            CUSTOM ANALYTICS TAGS - FOOTER     =
+============================================-->
+
+<?php if (get_field('before_bottom_body_tag')) : ?>
+
+	<?php the_field('before_bottom_body_tag'); ?>
+
+<?php else : ?>
+
+	<?php the_field('before_bottom_body_tag_default', 'option'); ?>
+
+<?php endif; ?>	
+
+<!--====  End of CUSTOM ANALYTICS TAGS  ====-->
+
+
+
+  

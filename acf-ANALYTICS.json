@@ -1,0 +1,169 @@
+[
+    {
+        "key": "group_59f166f16e04c",
+        "title": "ANALYTICS - CUSTOM CODE",
+        "fields": [
+            {
+                "key": "field_59f1677c6c20a",
+                "label": "BEFORE ENDING HEAD TAG",
+                "name": "before_ending_head_tag",
+                "type": "textarea",
+                "instructions": "Before &lt;\/head&gt; Tag ...",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "<script>\r\nTHIS IS A SAMPLE PIXEL CODE BEFORE ENDING HEAD TAG\r\n<\/script>",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": ""
+            },
+            {
+                "key": "field_59f1bc0b254fe",
+                "label": "AFTER TOP BODY TAG",
+                "name": "after_top_body_tag",
+                "type": "textarea",
+                "instructions": "Immediately after &lt;body&gt; tag ...",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": ""
+            },
+            {
+                "key": "field_59f1bf6c5fbf1",
+                "label": "BEFORE BOTTOM BODY TAG",
+                "name": "before_bottom_body_tag",
+                "type": "textarea",
+                "instructions": "Before ending &lt;\/body&gt; tag ...",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "THIS IS THE CUSTOM PAGE OR POST CODE",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ],
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                }
+            ]
+        ],
+        "menu_order": 20,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_59f17320ce68f",
+        "title": "ANALYTICS - SITE DEFAULT",
+        "fields": [
+            {
+                "key": "field_59f17320d1007",
+                "label": "BEFORE ENDING HEAD TAG DEFAULT",
+                "name": "before_ending_head_tag_default",
+                "type": "textarea",
+                "instructions": "Before &lt;\/head&gt; Tag ...",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "<script>\r\nTHIS IS A SAMPLE PIXEL CODE BEFORE ENDING HEAD TAG\r\n<\/script>",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": ""
+            },
+            {
+                "key": "field_59f1be2da892b",
+                "label": "AFTER TOP BODY TAG DEFAULT",
+                "name": "after_top_body_tag_default",
+                "type": "textarea",
+                "instructions": "Immediately after top &lt;body&gt; tag ...",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "THIS IS THE DEFAULT CODE",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": ""
+            },
+            {
+                "key": "field_59f1c08396170",
+                "label": "BEFORE BOTTOM BODY TAG DEFAULT",
+                "name": "before_bottom_body_tag_default",
+                "type": "textarea",
+                "instructions": "Before ending &lt;\/body&gt; tag ...",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "THIS IS THE SITE DEFAULT CODE",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "analytics-default-settings"
+                }
+            ]
+        ],
+        "menu_order": 20,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]
